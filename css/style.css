@@ -49,6 +49,10 @@ font-family: "Montserrat-Regular", sans-serif;
 font-family: "Roboto-Regular", sans-serif;
 */
 /*-Global-*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
