@@ -60,25 +60,23 @@ body {
 
 .container {
     max-width: 1200px;
-    height: 100%;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 /*-Header-*/
 
 .header {
-    height: 629px;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+    
 }
 
 .menu {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     list-style: none;
-    padding-bottom: 207px;
 }
 
 .menu__item a {
@@ -88,35 +86,34 @@ body {
     font-weight: 400;
     letter-spacing: 0.04em;
     color: #989696;
+    text-decoration: none;
+    margin-right: 43px;
 }
 
+.menu__item:last-child a {
+    margin-right: 0;
+}
 
 .active a {
     color: #010101;
 }
 
-.menu__item a img {
-    margin-top: 0;
-}
-
-.menu__item a {
-    text-decoration: none;
+.logo {
+    margin: 0 16px;
 }
 
 .header__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .header__title {
     font-family: "HelveticaNeueLTProMd", sans-serif;
     font-size: 44px;
-    line-height: 17px;
+    line-height: 41px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #1d1e1f;
+    margin: 207px auto 4px;
 }
 
 .header__text {
@@ -127,7 +124,7 @@ body {
     font-style: italic;
     letter-spacing: 0.03em;
     color: #898888;
-    padding-bottom: 43px;
+    margin: 0 auto 43px;
 }
 
 .header__button {
@@ -138,8 +135,13 @@ body {
     letter-spacing: 0.04em;
     color: #000000;
     text-decoration: none;
+    width: 188px;
+    height: 57px;
     border: 1px solid #000000;
-    padding: 25px 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 206px;
 }
 
 /**/
