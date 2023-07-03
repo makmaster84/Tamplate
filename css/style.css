@@ -201,7 +201,6 @@ body {
 
 .block__head {
     text-align: center;
-    padding-top: 138px;
 }
 
 .block__title {
@@ -210,6 +209,8 @@ body {
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #1d1e1f;
+    margin: 0;
+    padding-top: 138px;
     margin-bottom: 13px;
 }
 
@@ -220,13 +221,13 @@ body {
     font-style: italic;
     letter-spacing: 0.02em;
     color: #898888;
-    margin-bottom: 131px;
+    margin: 0;
 }
 
 .team__inner {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 150px;
+    padding-top: 127px;
 }
 
 .team__item {
@@ -234,6 +235,7 @@ body {
 }
 
 .team__item-img {
+    margin-bottom: 29px;
 }
 
 .team__item-title {
@@ -242,6 +244,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #464646;
+    margin: 0;
     margin-bottom: 7px;
 }
 
@@ -252,30 +255,17 @@ body {
     letter-spacing: 0.02em;
     color: #b3b3b3;
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 }
 
 .team__icon-box a {
-    text-decoration: none;
+    font-size: 20px;
+    color: #e4e4e4;
     transition: .3s;
 }
 
-.icon-twitter {
-    width: 21px;
-    height: 18px;
-    color: #000;
+.team__icon-box a:hover {
+    color: #949494;
 }
 
-.icon-instagram {
-    width: 21px;
-    height: 20px;
-    color: #000;
-}
-
-.icon-twitter:hover {
-    color: #e4e4e4;
-}
-
-.icon-instagram:hover {
-    color: #e4e4e4;
-}
+/*-Services-*/
