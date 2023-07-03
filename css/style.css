@@ -148,8 +148,8 @@ body {
     height: 1129px; 
     padding-top: 128px;
     padding-bottom: 271px;
-    background: url(../img/layers.png) center bottom repeat-x,
-                url(../img/layers1.png) center bottom repeat-x,
+    background: url(../img/layers.png) center 101% repeat-x,
+                url(../img/layers1.png) center 101% repeat-x,
                 #1d1d1d;
     /*background-size: contain, contain;*/
 }
@@ -159,7 +159,7 @@ body {
     grid-template-rows: max-content max-content;
     grid-template-columns: max-content max-content;
     grid-gap: 178px;
-    justify-content: center;
+    place-content: center center;
 }
 
 .about__item {
@@ -191,4 +191,91 @@ body {
     color: #b7b7b7;
     align-self: center;
     display: block;
+}
+
+/*-Team-*/
+
+.team {
+    height: 745px;
+}
+
+.block__head {
+    text-align: center;
+    padding-top: 138px;
+}
+
+.block__title {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #1d1e1f;
+    margin-bottom: 13px;
+}
+
+.block__text {
+    font-family: "Merriweather-LightItalic", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #898888;
+    margin-bottom: 131px;
+}
+
+.team__inner {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.team__item {
+    text-align: center;
+}
+
+.team__item-img {
+}
+
+.team__item-title {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #464646;
+    margin-bottom: 7px;
+}
+
+.team__item-text {
+    font-family: "HelveticaNeueLTProRoman", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #b3b3b3;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.team__icon-box a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+.icon-twitter {
+    width: 21px;
+    height: 18px;
+    color: #000;
+}
+
+.icon-instagram {
+    width: 21px;
+    height: 20px;
+    color: #000;
+}
+
+.icon-twitter:hover {
+    color: #e4e4e4;
+}
+
+.icon-instagram:hover {
+    color: #e4e4e4;
 }
