@@ -342,45 +342,113 @@ body {
 /*-Contacts-*/
 
 .contacts {
+    padding-bottom: 154px;
 }
 
-.block__head {
-}
-.block__title {
-}
-.block__text {
-}
+.block__head {}
+.block__title {}
+.block__text {}
+
 .contacts__inner {
+    text-align: center;
+    margin: 0 auto;
 }
+
 .contacts__icon-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 64px;
+    margin-bottom: 154px;
 }
-.contacts__item {
+
+.contacts__item i {
+    width: 16px;
+    height: 21px;
+    color: #323232;
 }
+
 .icon-phone {
 }
-.contacts__text {
+
+.contacts__text a {
+    text-decoration: none;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
 }
+
+.contacts__text {
+    padding-top: 12px;
+}
+
 .icon-location {
 }
+
 .icon-mail-alt {
 }
+
 .contacts__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-.contacts__name {
+
+.contacts__form input, 
+.contacts__form textarea {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    border: 1px solid #999999;
 }
-.contacts__email {
+
+.contacts__form input {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 352px;
 }
-.contacts__number {
-}
+
+.contacts__name {}
+
+.contacts__email {}
+
+.contacts__number {}
+
 .contacts__textarea {
+    padding-top: 22px;
+    padding-left: 22px;
+    padding-bottom: 158px;
 }
+
+.contacts__textarea {
+    margin-bottom: 21px;
+}
+
 .contacts__button {
+    font-family: "HelveticaNeueLTProMd", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #fefefe;
+    background-color: #161616;
+    padding: 20px 356px;
 }
 
 /*-Footer-*/
 
 .footer {
+    text-align: center;
+    margin-bottom: 29px;
 }
 
 .footer__text {
+    font-family: "HelveticaNeueLTProMd", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3b3b3b;
 }
