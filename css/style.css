@@ -48,7 +48,7 @@ font-family: "Montserrat-Light", sans-serif;
 font-family: "Montserrat-Regular", sans-serif;
 font-family: "Roboto-Regular", sans-serif;
 */
-/*-Global-*/
+/*----------------------------------Global-------------------------------*/
 * {
     box-sizing: border-box;
 }
@@ -64,7 +64,7 @@ body {
     margin: 0 auto;
 }
 
-/*-Header-*/
+/*--------------------------------Header-------------------------------*/
 
 .header {}
 
@@ -142,7 +142,7 @@ body {
     margin: 0 auto 206px;
 }
 
-/*-About-*/
+/*----------------------------------About----------------------------*/
 
 .about {
     height: 1129px; 
@@ -193,7 +193,7 @@ body {
     display: block;
 }
 
-/*-Team-*/
+/*---------------------------Team---------------------------*/
 
 .team {
     height: 745px;
@@ -268,7 +268,7 @@ body {
     color: #949494;
 }
 
-/*-Provide-*/
+/*------------------------------Provide----------------------------*/
 
 .provide {
     background-color: #181818;
@@ -339,14 +339,14 @@ body {
 .icon-upload-cloud {   
 }
 
-/*-Contacts-*/
+/*-----------------------Contacts-----------------------*/
 
-.contacts {
-    padding-bottom: 154px;
+.contacts {}
+
+.contacts .block__head .block__title {
+    padding-top: 95px;
 }
 
-.block__head {}
-.block__title {}
 .block__text {}
 
 .contacts__inner {
@@ -356,19 +356,26 @@ body {
 
 .contacts__icon-box {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    max-width: 570px;
+    margin: 0 auto;
     padding-top: 64px;
-    margin-bottom: 154px;
+}
+
+.contacts__item {
+    text-align: center;
+    width: 130px;
 }
 
 .contacts__item i {
-    width: 16px;
-    height: 21px;
     color: #323232;
+    font-size: 21px;
 }
 
-.icon-phone {
+.icon-phone {}
+
+.contacts__text {
+    margin-bottom: 12px;
 }
 
 .contacts__text a {
@@ -378,26 +385,31 @@ body {
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #898888;
+    transition: .3s;
 }
 
-.contacts__text {
-    padding-top: 12px;
+.contacts__text a:hover {
+    color: #4b4b4b;
+    text-decoration: underline;
 }
 
-.icon-location {
-}
+.icon-location {}
 
-.icon-mail-alt {
-}
+.icon-mail-alt {}
 
 .contacts__form {
+    padding-top: 153px;
     display: flex;
     flex-direction: column;
+    max-width: 770px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.contacts__form input, 
-.contacts__form textarea {
+.contacts__form input {
+    height: 52px;
+    padding: 20px;
+    text-align: center;
     font-family: "HelveticaNeueLTProLt", sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -406,49 +418,63 @@ body {
     border: 1px solid #999999;
 }
 
-.contacts__form input {
-    text-align: center;
+.contacts__name {
     margin-bottom: 20px;
-    padding: 20px 352px;
 }
 
-.contacts__name {}
+.contacts__email {
+    margin-bottom: 20px;
+}
 
-.contacts__email {}
+.contacts__number {
+    margin-bottom: 18px;
+}
 
-.contacts__number {}
-
-.contacts__textarea {
-    padding-top: 22px;
-    padding-left: 22px;
-    padding-bottom: 158px;
+/*убирает стрелки у number*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
 .contacts__textarea {
+    padding: 22px;
     margin-bottom: 21px;
+    height: 195px;
+    resize: none;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    border: 1px solid #999999;
 }
 
-.contacts__button {
+.contacts__form .contacts__button {
+    cursor: pointer;
     font-family: "HelveticaNeueLTProMd", sans-serif;
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #fefefe;
     background-color: #161616;
-    padding: 20px 356px;
+    border: none;
+    outline: none;
+    padding: 0;
 }
 
-/*-Footer-*/
-
+/*------------------------------Footer-------------------------*/
 .footer {
-    text-align: center;
-    margin-bottom: 29px;
+    padding-top: 154px;
 }
 
 .footer__text {
-    font-family: "HelveticaNeueLTProMd", sans-serif;
+    text-align: center;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #3b3b3b;
+    margin-bottom: 29px;
 }
